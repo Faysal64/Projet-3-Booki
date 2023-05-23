@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -16,22 +16,22 @@
     <title>Booki</title>
   </head>
 
-  <body>
-    <header class="flexHead">
-      <div><img src="images/logo/Booki.png" class="logo" /></div>
+  <header class="flexHead">
+    <div><img src="images/logo/Booki.png" class="logo" /></div>
 
-      <nav>
-        <div class="displayI">
-          <div class="bordertop marginH">
-            <a href="#">Hébergements</a>
-          </div>
-          <div class="margeA">
-            <a href="#">Activités</a>
-          </div>
+    <nav>
+      <div class="displayI">
+        <div class="bordertop marginH">
+          <a href="#">Hébergements</a>
         </div>
-      </nav>
-    </header>
+        <div class="margeA">
+          <a href="#">Activités</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <body>
     <h2 class="margerh2">
       Trouvez votre hébergement pour des vacances de rêve
     </h2>
@@ -43,13 +43,19 @@
         <div class="position textcenter2">
           <i class="fa-solid fa-location-dot"></i>
         </div>
-        <div><input type="search" placeholder="Marseille, France" /></div>
+        <div>
+          <input
+            id="research-input"
+            type="search"
+            placeholder="Marseille, France"
+          />
+        </div>
         <div class="Rechercher textcenter">Rechercher</div>
       </div>
     </form>
 
     <div class="displayI espaceentre">
-      <div class="espaceR">Filtres</div>
+      <div class="espaceR margintopFILTRE">Filtres</div>
       <div class="espaceR borderfiltre">
         <i class="fa-solid fa-person colorFiltre marginfiltre"></i>Économique
       </div>
@@ -198,11 +204,13 @@
           </div>
 
           <div class="backcard flexRow margin2 margin3">
-            <img
-              src="images/hebergements/emile-guillemot.jpg"
-              alt="photo chambre"
-              class="imagesectionB"
-            />
+            <div class="Borderwidht">
+              <img
+                src="images/hebergements/emile-guillemot.jpg"
+                alt="photo chambre"
+                class="imagesectionB"
+              />
+            </div>
             <div class="flexcolumn">
               <h3 class="marginlespluspopu">Auberge La Canebière</h3>
               <p class="marginendessous">Nuit à partir de 25€</p>
@@ -221,7 +229,7 @@
             <img
               src="images/hebergements/aw-creative.jpg"
               alt="photo chambre"
-              class="imagesectionB"
+              class="imagesectionB Borderwidht"
             />
             <div class="flexcolumn">
               <h3 class="marginlespluspopu">
@@ -243,7 +251,7 @@
             <img
               src="images/hebergements/febrian-zakaria2.jpg"
               alt="photo chambre"
-              class="imagesectionB"
+              class="imagesectionB Borderwidht"
             />
             <div class="flexcolumn">
               <h3 class="marginlespluspopu">Hôtel Bleu et Blanc</h3>
@@ -265,60 +273,82 @@
     <section class="marginTopFooter">
       <div class="marginbot"><h2>Activités à Marseille</h2></div>
       <div class="conteneurC">
+        <div class="margesec3">
+          <div class="borderActivités">
+            <img
+              src="images/activites/reno-laithienne.jpg"
+              alt="photo du port"
+              class="imagesectionC"
+            />
+            <div class="displaycard">
+              <div class="cardsectionc">
+                <p class="margecard">Vieux-Port</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="margesec3">
+          <div class="borderActivités">
+            <img
+              src="images/activites/paul-hermann.jpg"
+              alt="photo du port"
+              class="imagesectionC"
+            />
+            <div class="displaycard">
+              <div class="cardsectionc">
+                <p class="margecard">Fort de Pomègues</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="margesec3">
+          <div class="borderActivités">
+            <img
+              src="images/activites/kilyan-sockalingum.jpg"
+              alt="photo du port"
+              class="imagesectionC"
+            />
+            <div class="displaycard">
+              <div class="cardsectionc">
+                <p class="margecard">Parc national des Calanques</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="borderActivités">
-          <img
-            src="images/activites/reno-laithienne.jpg"
-            alt="photo du port"
-            class="imagesectionC espaceR"
-          />
-          <div class="">Vieux-Port</div>
-        </div>
-
-        <div>
-          <img
-            src="images/activites/paul-hermann.jpg"
-            alt="photo du port"
-            class="imagesectionC espaceR"
-          />
-          <div>Fort de Pomègues</div>
-        </div>
-
-        <div>
-          <img
-            src="images/activites/kilyan-sockalingum.jpg"
-            alt="photo du port"
-            class="imagesectionC espaceR"
-          />
-          <div>Parc national des Calanques</div>
-        </div>
-
-        <div>
           <img
             src="images/activites/florian-wehde.jpg"
             alt="photo du port"
             class="imagesectionC"
           />
-          <div>Notre-Dame-de-la-Garde</div>
+          <div class="displaycard">
+            <div class="cardsectionc">
+              <p class="margecard">Notre-Dame-de-la-Garde</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="conteneurFooter backgroundfooter marginTopFooter">
-        <div class="marginfooter">
+        <div class="marginfooter marginleftfooter">
           <h3 class="marginbotfooter">À propos</h3>
           <p class="marginbotfooter">Fonctionnement du site</p>
           <p class="marginbotfooter">Conditions générales</p>
           <p>Données et confidentialité</p>
         </div>
 
-        <div>
+        <div class="marginrightfooter marginbotfooter2">
           <h3 class="marginbotfooter">Nos hébergements</h3>
           <p class="marginbotfooter">Charte qualité</p>
           <p>Proposé votre hôtel</p>
         </div>
 
-        <div>
+        <div class="marginbotfooter2">
           <h3 class="marginbotfooter">Assistance</h3>
           <p class="marginbotfooter">Centre d'aide</p>
           <p>Nous contacter</p>
