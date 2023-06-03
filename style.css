@@ -1,8 +1,8 @@
-@media screen and (max-width: 960px;){
-    .conteneur{
-        flex-direction: column;
-    }
-}
+
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,8 +55,20 @@ table {
 body {
     font-family: Raleway;
     font-size: 15px ;
-    margin: 0px 50px 0px 50px;
 }
+
+.margediv{
+    margin: 0 50px 0 50px;
+}
+
+.margediv2{
+    margin: 0 80px 0 80px;
+}
+
+.marginL{
+    margin-left: 30px;
+}
+
 
 .stars{
     color: blue;
@@ -66,10 +78,152 @@ body {
     font-weight: bolder;
 }
 
+.Flexcentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.flexRow2{
+display: flex;
+flex-direction: row;
+
+}
+
+.colorA{
+
+color: black;
+}
+
+.margeliens
+{
+    width: 25%;
+}
+
+.margelien{
+    width: 140px;
+    height: 99px;
+    margin-right: 0%;
+}
+
+.bordernav:hover{
+    border-top: 1px solid blue;
+    
+}
+
+.color:hover{
+    color: blue;
+}
+
+
+.margebarredeR
+{
+    margin-top: 49px;
+    margin-bottom: 54px;
+}
 
 /*HEADER*/
+
+.bordursearch2{
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #F2F2F2;
+}
+
+.Tailleicon{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.recherche{
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.backgroundG{
+    background-color: #f2f2f2;
+}
+
+.bordurenone
+{
+    border: none;
+}
+
+.paddingsearch{
+    padding-left: 20px;
+}
+
+.backbleue{
+    background-color: blue;
+}
+
+.boutonsearch{
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+.margepos{
+    margin: 16px 18px 16px 18px;
+}
+
+.margeRECH{
+    margin: 18px 20px 20px 20px ;
+}
+
+
+.bordurefiltre{
+    border: 1px solid #D9D9D9;
+    border-radius: 30px 30px 30px 30px;
+    width: 24px;
+    height: 24px;
+}
+
+.margininté {
+    color: blue;
+    margin: 4px 0px 0px 9.6px;
+}
+
+
+.margeinfo{
+    margin: 6px 0px 0px 7px;
+}
+
+.stars2{
+    color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.margenav
+{
+    width: 0%;
+}
+
+
+
+
+/*fin de correction*/
 
 #research-input{
 border: none;
@@ -97,18 +251,6 @@ text-decoration: none;
 color: blue;
 }
 
-.bordertop:hover{
-border-top: 1px solid blue;
-
-color: blue;
-}
-
-.bordertop2{
-    border-top: 1px solid blue;
-    width: 113px;
-    height: 2px;
-    
-}
 
 
 
@@ -139,6 +281,14 @@ color: blue;
 .margindernier{
 margin: 45px 0px 37.5px 0px;
 }
+
+#H{
+    border-top: 1px solid blue;
+    width: 113px;
+    height: 2px;
+}
+
+
 
 /*sectionA*/
 h3 {
@@ -264,6 +414,7 @@ margin-top: 13px;
 }
 
 .background1{
+    
 background: #f2f2f2;
 width: 871px;
 height: 611.5px;
@@ -409,7 +560,7 @@ margin-left: 15px;
 .imagesectionC {
     width: 297.5px;
     height: 380px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .conteneurC
@@ -420,8 +571,10 @@ margin-left: 15px;
 
 
 .borderActivités{
-    
-    box-shadow: 2px 2px 2px 2px #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #D9D9D9
+
+
 
 }
 
@@ -508,3 +661,58 @@ height: 163px;
 
 
 
+/*Media queries*/
+
+@media screen and (max-width: 1426px)
+{
+.containeur{
+    
+    align-items: none;
+}
+.centre {
+    justify-content: none;
+    align-items: none;
+}
+}
+
+
+
+/*media fournis*/
+
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
