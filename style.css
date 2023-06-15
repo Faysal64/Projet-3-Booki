@@ -1,8 +1,3 @@
-
-
-
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,9 +47,13 @@ table {
 /*GENERAL*/
 
 
+
 body {
     font-family: Raleway;
     font-size: 15px ;
+    min-height: 100vh;
+    min-height: 100vh; 
+        height: 100%;
 }
 
 .margediv{
@@ -94,6 +93,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1435px;
+}
+
+.tailleliens{
+    width: 45%;
 }
 
 
@@ -101,6 +105,10 @@ body {
 display: flex;
 flex-direction: row;
 
+}
+
+.colorliens{
+    color: blue;
 }
 
 .colorA{
@@ -113,20 +121,26 @@ color: black;
     width: 25%;
 }
 
+.decorationnone{
+    text-decoration: none;
+}
+
+
+
 .margelien{
     width: 140px;
     height: 99px;
     margin-right: 0%;
 }
 
-.bordernav:hover{
-    border-top: 1px solid blue;
-    
+
+
+.margeRECH2{
+display: flex;
+align-items: center;
+
 }
 
-.color:hover{
-    color: blue;
-}
 
 
 .margebarredeR
@@ -134,6 +148,8 @@ color: black;
     margin-top: 49px;
     margin-bottom: 54px;
 }
+
+
 
 /*HEADER*/
 
@@ -220,6 +236,13 @@ color: black;
     width: 0%;
 }
 
+.bordurenav{
+    border-top: 1px solid blue;
+}
+
+.marginleftlogo{
+    margin: 30px 0px 0px 50px;
+}
 
 
 
@@ -231,6 +254,9 @@ height: 43px;
 width: 100;
 }
 
+.fontboldi{
+    font-weight: bolder;
+}
 
 
 
@@ -248,9 +274,12 @@ align-items: center;
 
 a {
 text-decoration: none;
-color: blue;
+color: black;
 }
 
+a:hover{
+    color: blue;
+}
 
 
 
@@ -394,6 +423,25 @@ margin-top: 13px;
 }
 
 
+.conteneur1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+}
+
+.conteneur2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+
+}
+
 
 
 /*sectionB*/
@@ -402,7 +450,18 @@ margin-top: 13px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    width: auto;
+    height:auto;
+    
+}
+.card2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .card {
@@ -413,12 +472,21 @@ margin-top: 13px;
     border-radius: 20px 20px 20px 20px;
 }
 
+.card2 {
+    width: 250px;
+    height: 207.25px;
+    background: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+}
+
 .background1{
     
 background: #f2f2f2;
-width: 871px;
-height: 611.5px;
+width: 871px ;
+
 border-radius: 15px;
+
 
 }
 
@@ -426,7 +494,7 @@ border-radius: 15px;
 width: 250.33px;
 height: 124px;
 border-radius: 20px 20px 0px 0px;
-
+object-fit: cover;
 }
 
 .containeur{
@@ -444,6 +512,10 @@ border-radius: 20px 20px 0px 0px;
     justify-content: start;
 }
 
+.borderfiltre:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 
 
@@ -459,7 +531,25 @@ border-radius: 20px 20px 0px 0px;
 }
 
 
+.flexpopu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /*sectionB*/
+
+
+
+.flexpopu{
+    
+}
+
+.margepopu{
+    margin-right: 31px ;
+    margin-top: 6px;
+    color: blue;
+}
 
 
 .imagesectionB
@@ -468,7 +558,7 @@ border-radius: 20px 20px 0px 0px;
     height: 135px;
     border-radius: 20px 0px 0px 20px;
     border-width: 5px 0px 5px 5px;
-
+    object-fit: cover;
 }
 
 .Borderwidht{
@@ -515,6 +605,10 @@ flex-direction: column;
     justify-content: space-around;
 }
 
+.margin2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 .margin2{
 margin: 0px 30px 30px 30px;
@@ -561,14 +655,20 @@ margin-left: 15px;
     width: 297.5px;
     height: 380px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 .conteneurC
 {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
+.borderActivités:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 .borderActivités{
     border-radius: 15px;
@@ -618,7 +718,7 @@ margin-top: 0px;
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    
     align-items: center;
 }
 
@@ -642,77 +742,664 @@ height: 163px;
 
     margin-bottom: 15px;
 }
-
+b
 .marginleftfooter{
     margin-left: 20px;
-    margin-right: 272px;
+    margin-right: auto;
 }
 
 
 .marginrightfooter{
-
-    margin-right: 272px;
+margin-left: 272px;
+    margin-right: 272px ;
 }
 
 .marginbotfooter2{
     margin-bottom: 22px;
 }
 
+.marginleft2{
+    margin-left: 20px;
+}
+
+
+.logocentre{
+    margin-top: 30px;
+}
+
+.flexnav2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.alignement{
+    display: inline-block;
+}
+
+
+.Filtre1{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Filtre2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 
 
 
 /*Media queries*/
 
-@media screen and (max-width: 1426px)
+@media screen and (max-width: 1024px)
 {
-.containeur{
+  
+    h3 {
+        font-weight: bold;
+       
+    }
+
+
     
-    align-items: none;
+    .containeur {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        
+    }
+
+    .Backpopulaire {
+        width: 924px;
+        height: 252px;
+        margin-top: 50px;
+        padding-bottom: 20px;
+    
+    }
+
+    .cardPOPU{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    .conteneur {
+       flex-wrap: none;
+       justify-content: center;
+    
 }
-.centre {
-    justify-content: none;
-    align-items: none;
+
+.flexpopu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+
+.margin2der{
+    margin-top: 29.5px;
+}
+
+.margeicone{
+    margin-right: 37px;
+}
+
+.conteneur1{
+    width: 100%;
+    height: none;
+    margin-left: 10px;
+}
+
+.conteneur2{
+    width: 100%;
+    height: none;
+    margin-left: 10px;
+}
+
+.card{
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
+}
+
+.espaceB2 {
+    margin-bottom: 30px;
 }
 
 
 
-/*media fournis*/
+.card2 {
+    width: 250px;
+    height: 207.25px;
+    background: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+}
 
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
+
+
+.marginendessous {
+    margin: 0px 0px 36px 15px;
+}
+
+
+.margindessous2 {
+    margin: 0px 0px 0px 15px;
+}
+
+
+.imagesectionB {
+    width: 91.67px;
+    height: 146px;
+    border-radius: 20px 0px 0px 20px;
+    border-width: 6px;
+    padding: 2px 0px 2px 2px;
+}
+
+.backcard {
+    background-color: #FFFFFF;
+    width: 274.67px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.étoilemarge{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: px;
+}
+
+.marginlespluspopu {
+    margin: 0px 0px 0px 15px;
+}
+
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardsectionc {
+    background: none;
+    border-radius: 0px 0px 20px 20px;
+    width: 193.5px;
+    height: 70px;
+    margin-top: 0px;
+}
+
+.imagesectionC {
+    width: 193.5px;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.backgroundfooter {
+    background: #F2F2F2;
+    width: 924px;
+    height: 163px;
+}
+
+.marginleftfooter {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.marginrightfooter {
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+
+.background1 {
+    background: #f2f2f2;
+    width: 924px;
+    height: 640px;
+    border-radius: 15px;
+    margin-left: 40PX;
+}
+
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1025px;
+}
+
+.marginbotfooter2 {
+    margin-bottom: 22px;
+    margin-right: 20px;
+}
+
+.marginleftfooter {
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+
+.marginseul{
+margin-left: 200px;
+
+}
+
+
+}
+
+
+
+
+@media screen and (min-width: 1450px) {
+    body {
+      margin: 0 auto;
+      max-width: 1450px;
+    }
+  }
+    
+
+
+
+
+
+
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .backgroundfooter {
+        background: #F2F2F2;
+        width: 375px;
+        height: 461px;
+    }
+
+    .conteneurFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        width: 100%;
+    }
+
+    .marginseul {
+        margin-left: 20px;
+    }
+
+    .card {
+        box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
+        width: 335px;
+    }
+
+    .backcard {
+        background-color: #FFFFFF;
+        width: 335px;
+        height: 160px;
+        border-radius: 20px;
+    }
+
+    .card2 {
+        width: 335px;
+        height: 207.25px;
+        background: #FFFFFF;
+        border: 5px solid #FFFFFF;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
+        margin-bottom: 30px;
+    }
+
+    .imagesSectionA {
+        width: 335px;
+        height: 124px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    .marginrightfooter {
+        margin-right: auto;
+        margin-left: 20px;
+    }
+
+    .marginleftfooter {
+        margin-left: 20px;
+        margin-right: 200px;
+        width: 100%;
+    }
+    
+    .conteneurC {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imagesectionC {
+        width: 315px;
+        height: 141px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .cardsectionc {
+        background: none;
+        border-radius: 0px 0px 20px 20px;
+        width: 100%;
+        height: 59px;
+        margin-top: 0px;
+    }
+
+
+    .marginbotmobile{
+        margin-bottom: 15px;
+    }
+
+    .borderActivités {
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px 5px #d9d9d9;
+        width: 315px;
+    }
+    
+
+
+    .containeur {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 900px;
+    }
+    
+    .background1 {
+        background: none;
+        width: 924px;
+        height: 611.5px;
+        border-radius: 15px;
+        margin-left: 40PX;
+        margin-top: 30px;
+        margin-bottom: 950px;
+    }
+
+    .conteneur1 {
+        width: 100%;
+        height: none;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .conteneur2 {
+        width: 100%;
+        height: none;
+        margin-left: 10px;
+        display: flex;
         flex-direction: column;
     }
 
-    .hebergements {
+    .logocentre{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .flexnav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
         width: 100%;
     }
 
-    .populaires {
+    .borderbottom{
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
-        margin-top: 50px;
     }
 
-    .populaires-cards {
+    .borderbottom2{
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+    }
+
+    .borderbottom:hover{
+        border-bottom: 2px solid blue;
+        width: 100%;
+        color: blue;
+    }
+
+    .borderbottom2:hover{
+        border-bottom: 2px solid blue;
+        width: 100%;
+        color: blue;
+    }
+
+    .boutonsearch {
+        width: 49px !important;
+        height: 49px;
+        color: white;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+
+    .bordursearch2 {
+        width: 335px;
+        border-radius: 10px;
+        border: 0.5px solid #F2F2F2;
+    }
+
+    .searchloupe{
+        margin: 17px 0px 0px 12px;
+    }
+
+
+
+    .flexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .bordurenav {
+        border-bottom: none;
+        margin-right: ;
+        width: 100%;
+        border-top: none;
+      }
+      
+      .decorationnone {
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .bordermobile {
+        border-bottom: 2px solid #f2f2f2;
+        width: 100%;
+        
+      }
+
+      .bordermobile2 {
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+    }
+     
+    
+    .bordermobile:hover {
+        border-bottom: 2px solid blue;
+        width: 100%;
+        
+      }
+
+
+      .bordermobile2:hover {
+        border-bottom: 2px solid blue;
+        width: 100%;
+    }
+      
+      
+      .logoContainer {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .borderfiltre {
+        border: 2px solid #F2F2F2;
+        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        width: 186px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .displayI {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Filtre1{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .Filtre2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+    .margintopFILTRE {
+        margin-top: none;
+        margin-bottom: 20px;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
+
+
+    .Backpopulaire {
+        width: 924px;
+        height: 252px;
+        margin-top: 20px;
+        padding-bottom: 20px;
     }
+
+
+    .Backpopulaire {
+        width: 100%;
+        height: 569px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .backgroundmobile{
+    background-color:  #F2F2F2;
+    width:60%;
+    height: 700px;
+    margin-left: 0px;
+    }
+
+    .backgroundmobile {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .backgroundmobile {
+        
+        margin-left: 0px;
+      }
+
+    .displaymobile{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    
+    .cardPOPU {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .margediv {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .margemobile{
+        margin: 0px 0px 0px 20px;
+    }
+      
+      /* Ajoutez les règles pour la configuration au-dessus de 768px ici */
+      
+      @media (max-width: 768px) {
+        .flexBetween {
+          display: block;
+        }
+        
+       
+            .flexAround {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+            }
+         
+      }
+      
+    
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+
+
+
+
+  
+  @media (max-width: 768px) {
+
+    .margediv2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    .margediv2 {
+      margin-left: 30px;
+    }
+
+  }
+
+
+
+
+
+    @media (max-width: 768px) {
+        .margeRECH {
+          display: none;
+        }
+        
+        .boutonsearch i {
+          display: inline;
+        }
+      }
+      
+      @media (min-width: 769px) {
+        .boutonsearch i {
+          display: none;
+        }
+
+        .backicone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        
+
+      }
+      
